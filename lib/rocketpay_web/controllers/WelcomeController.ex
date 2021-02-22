@@ -3,7 +3,10 @@ defmodule RocketpayWeb.WelcomeController do
   use RocketpayWeb, :controller
 
   # Aqui criaremos o index que será renderizado nas rotas
-  def index(){
+  # Toda função recebe dois parâmetros a conexão e os parametross
+  def index(conn, _params) do
+    text(conn, "Welcome to the Rocketpay API")
+  end
 
-  }
+
 end
